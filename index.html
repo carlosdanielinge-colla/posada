@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de prueba para "Lic. Felix"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="main-container">
+
+        <h1>POSADA</h1>
+
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source src="videos/TU_VIDEO_AQUI.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="controls">
+            <button onclick="playVideo()">▶ Reproducir</button>
+            <button onclick="pauseVideo()">⏸ Pausar</button>
+            <button onclick="stopVideo()">⏹ Detener</button>
+        </div>
+
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>

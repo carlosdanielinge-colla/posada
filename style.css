@@ -1,0 +1,116 @@
+/* ==============================
+   ESTILO GENERAL
+============================== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f3d2e, #1e6f5c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* ==============================
+   CONTENEDOR PRINCIPAL
+============================== */
+.main-container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px 35px;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ==============================
+   TÍTULO
+============================== */
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h1::after {
+    content: " 🎄🎁";
+}
+
+/* ==============================
+   VIDEO
+============================== */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+video {
+    width: 100%;
+    max-height: 450px;
+    border-radius: 15px;
+    border: 4px solid #c1121f;
+    background-color: black;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* ==============================
+   CONTROLES
+============================== */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ==============================
+   BOTONES
+============================== */
+button {
+    background: linear-gradient(145deg, #c1121f, #9b111e);
+    border: none;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #ffffff, #e9e9e9);
+    color: #c1121f;
+    transform: scale(1.08);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
